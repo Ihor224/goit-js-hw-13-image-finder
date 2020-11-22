@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-finder</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form class="search-form" id="search-form">
+        <label for="query">enter for search:</label>
+        <input type="text" class="form-control" name="query" autocomplete="off" placeholder="search images..." />
+        <button type="submit" class="btn">show</button>
+    </form>
+    
+    <ul class="gallery"></ul>
+    
+    <button type="button" class="btn button" data-action="load-more">
+        <span class="spinner is-hidden" role="status" aria-hidden="true"></span>
+        <span class="label">load more...</span>
+    </button>
+
+    <script src="./index.js"></script>
+</body>
+</html>
